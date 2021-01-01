@@ -12,7 +12,7 @@ addItemBtn.onclick = function() {addItem()}
 
     
  
-function addItem(){
+function addItem(name, color){
     if(itemInput.value !== ''){
         let list = document.createElement('li')
         list.textContent = itemInput.value
@@ -30,10 +30,6 @@ function addItem(){
     
         }) 
 
-        for(let i = 0; list.length; i++){
-            list[0].style.background = 'red';
-
-        }
       
     }
     else {
@@ -47,6 +43,6 @@ function addItem(){
 
 }
 
-
+addItem('')
 
 
